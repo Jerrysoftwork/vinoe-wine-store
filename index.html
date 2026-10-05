@@ -1,337 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta
-        name="description"
-        content="VINOÉ — Discover carefully selected fine wines for exceptional moments."
-    >
+      name="description"
+      content="VINOÉ — Discover carefully selected fine wines for exceptional moments."
+    />
 
     <title>VINOÉ | Fine Wines. Exceptional Moments.</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ==============================
          HEADER
          ============================== -->
 
     <header class="header">
+      <div class="container nav-container">
+        <!-- LOGO -->
+        <a href="#" class="logo" aria-label="VINOÉ Home">
+          <span>VINOÉ</span>
+          <small>Fine Wines</small>
+        </a>
 
-        <div class="container nav-container">
+        <!-- NAVIGATION -->
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#" class="nav-link active">Home</a>
 
-            <!-- LOGO -->
-            <a href="#" class="logo" aria-label="VINOÉ Home">
-                <span>VINOÉ</span>
-                <small>Fine Wines</small>
-            </a>
+          <a href="#" class="nav-link">Shop</a>
 
+          <a href="#" class="nav-link">Collections</a>
 
-            <!-- NAVIGATION -->
-            <nav class="nav" aria-label="Main navigation">
+          <a href="#" class="nav-link">About</a>
 
-                <a href="#" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
 
-                <a href="#" class="nav-link">Shop</a>
+        <!-- NAVIGATION ACTIONS -->
+        <div class="nav-actions">
+          <!-- Search -->
+          <button class="nav-icon" type="button" aria-label="Search">⌕</button>
 
-                <a href="#" class="nav-link">Collections</a>
+          <!-- Cart -->
+          <button
+            class="nav-icon cart"
+            type="button"
+            aria-label="Shopping cart"
+          >
+            ♡
 
-                <a href="#" class="nav-link">About</a>
-
-                <a href="#" class="nav-link">Contact</a>
-
-            </nav>
-
-
-            <!-- NAVIGATION ACTIONS -->
-            <div class="nav-actions">
-
-                <!-- Search -->
-                <button
-                    class="nav-icon"
-                    type="button"
-                    aria-label="Search"
-                >
-                    ⌕
-                </button>
-
-
-                <!-- Cart -->
-                <button
-                    class="nav-icon cart"
-                    type="button"
-                    aria-label="Shopping cart"
-                >
-                    ♡
-
-                    <span class="cart-count">
-                        0
-                    </span>
-                </button>
-
-            </div>
-
+            <span class="cart-count"> 0 </span>
+          </button>
         </div>
-
+      </div>
     </header>
-
-
 
     <!-- ==============================
          MAIN CONTENT
          ============================== -->
 
     <main>
-
-        <!-- ==============================
+      <!-- ==============================
              HERO SECTION
              ============================== -->
 
-        <section class="hero">
+      <section class="hero">
+        <div class="container hero-container">
+          <!-- HERO CONTENT -->
 
-            <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-eyebrow">DISCOVER THE ART OF WINE</p>
 
+            <h1>
+              Fine Wines.<br />
+              <span>Exceptional Moments.</span>
+            </h1>
 
-                <!-- HERO CONTENT -->
+            <p class="hero-description">
+              Carefully selected wines crafted to elevate the moments that
+              matter most.
+            </p>
 
-                <div class="hero-content">
+            <!-- HERO BUTTONS -->
 
-                    <p class="hero-eyebrow">
-                        DISCOVER THE ART OF WINE
-                    </p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary"> Explore Collection </a>
 
+              <a href="#" class="btn btn-secondary"> Our Story </a>
+            </div>
+          </div>
 
-                    <h1>
-                        Fine Wines.<br>
-                        <span>Exceptional Moments.</span>
-                    </h1>
+          <!-- HERO IMAGE -->
 
-
-                    <p class="hero-description">
-                        Carefully selected wines crafted to elevate
-                        the moments that matter most.
-                    </p>
-
-
-                    <!-- HERO BUTTONS -->
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#"
-                            class="btn btn-primary"
-                        >
-                            Explore Collection
-                        </a>
-
-
-                        <a
-                            href="#"
-                            class="btn btn-secondary"
-                        >
-                            Our Story
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- HERO IMAGE -->
-
-                <div class="hero-image">
-
-                    <div class="image-frame">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=85"
-                            alt="Premium red wine bottle and wine glass"
-                        >
-
-                    </div>
-
-
-                    <!-- CURATED SELECTION BADGE -->
-
-                    <div class="hero-badge">
-
-                        <span>V</span>
-
-                        <p>
-                            Curated<br>
-                            Selection
-                        </p>
-
-                    </div>
-
-                </div>
-
+          <div class="hero-image">
+            <div class="image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=85"
+                alt="Premium red wine bottle and wine glass"
+              />
             </div>
 
-        </section>
-                <!-- ==============================
+            <!-- CURATED SELECTION BADGE -->
+
+            <div class="hero-badge">
+              <span>V</span>
+
+              <p>
+                Curated<br />
+                Selection
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==============================
              WINE CATEGORIES
              ============================== -->
 
-        <section class="categories">
+      <section class="categories">
+        <div class="container">
+          <!-- Section Heading -->
 
-            <div class="container">
+          <div class="section-heading">
+            <p class="section-eyebrow">EXPLORE OUR COLLECTION</p>
 
-                <!-- Section Heading -->
+            <h2>Find Your Perfect Pour</h2>
 
-                <div class="section-heading">
+            <p class="section-description">
+              From bold reds to elegant sparkling wines, discover a selection
+              curated for every occasion.
+            </p>
+          </div>
 
-                    <p class="section-eyebrow">
-                        EXPLORE OUR COLLECTION
-                    </p>
+          <!-- Category Grid -->
 
-                    <h2>
-                        Find Your Perfect Pour
-                    </h2>
+          <div class="category-grid">
+            <!-- RED WINE -->
 
-                    <p class="section-description">
-                        From bold reds to elegant sparkling wines,
-                        discover a selection curated for every occasion.
-                    </p>
+            <a href="#" class="category-card">
+              <img src="images/red-wine.jpg" alt="Red wine" />
 
-                </div>
+              <div class="category-overlay">
+                <span>01</span>
 
+                <h3>Red Wine</h3>
 
-                <!-- Category Grid -->
+                <p>Rich &amp; Bold</p>
+              </div>
+            </a>
 
-                <div class="category-grid">
+            <!-- WHITE WINE -->
 
+            <a href="#" class="category-card">
+              <img src="images/white-wine.jpg" alt="White wine" />
 
-                    <!-- RED WINE -->
+              <div class="category-overlay">
+                <span>02</span>
 
-                    <a href="#" class="category-card">
+                <h3>White Wine</h3>
 
-                        <img
-                            src="images/red-wine.jpg"
-                            alt="Red wine"
-                        >
+                <p>Crisp &amp; Elegant</p>
+              </div>
+            </a>
 
-                        <div class="category-overlay">
+            <!-- ROSÉ -->
 
-                            <span>01</span>
+            <a href="#" class="category-card">
+              <img src="images/rose-wine.jpg" alt="Rosé wine" />
 
-                            <h3>
-                                Red Wine
-                            </h3>
+              <div class="category-overlay">
+                <span>03</span>
 
-                            <p>
-                                Rich &amp; Bold
-                            </p>
+                <h3>Rosé</h3>
 
-                        </div>
+                <p>Fresh &amp; Delicate</p>
+              </div>
+            </a>
 
-                    </a>
+            <!-- SPARKLING -->
 
+            <a href="#" class="category-card">
+              <img src="images/sparkling-wine.jpg" alt="Sparkling wine" />
 
-                    <!-- WHITE WINE -->
+              <div class="category-overlay">
+                <span>04</span>
 
-                    <a href="#" class="category-card">
+                <h3>Sparkling</h3>
 
-                        <img
-                            src="images/white-wine.jpg"
-                            alt="White wine"
-                        >
+                <p>Bright &amp; Celebratory</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Wines -->
+<section class="featured" id="shop">
+    <div class="section-header">
+        <p class="section-eyebrow">OUR SELECTION</p>
+        <h2>Featured Wines</h2>
+        <p>
+            Carefully selected bottles for unforgettable moments.
+        </p>
+    </div>
 
-                        <div class="category-overlay">
+    <div class="wine-grid">
 
-                            <span>02</span>
-
-                            <h3>
-                                White Wine
-                            </h3>
-
-                            <p>
-                                Crisp &amp; Elegant
-                            </p>
-
-                        </div>
-
-                    </a>
-
-
-                    <!-- ROSÉ -->
-
-                    <a href="#" class="category-card">
-
-                        <img
-                            src="images/rose-wine.jpg"
-                            alt="Rosé wine"
-                        >
-
-                        <div class="category-overlay">
-
-                            <span>03</span>
-
-                            <h3>
-                                Rosé
-                            </h3>
-
-                            <p>
-                                Fresh &amp; Delicate
-                            </p>
-
-                        </div>
-
-                    </a>
-
-
-                    <!-- SPARKLING -->
-
-                    <a href="#" class="category-card">
-
-                        <img
-                            src="images/sparkling-wine.jpg"
-                            alt="Sparkling wine"
-                        >
-
-                        <div class="category-overlay">
-
-                            <span>04</span>
-
-                            <h3>
-                                Sparkling
-                            </h3>
-
-                            <p>
-                                Bright &amp; Celebratory
-                            </p>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
+        <!-- Wine 1 -->
+        <div class="wine-card">
+            <div class="wine-image">
+                <span class="wine-badge">BEST SELLER</span>
+                <img src="images/red-wine.jpg" alt="Premium Red Wine">
             </div>
 
-        </section>
+            <div class="wine-info">
+                <p class="wine-type">RED WINE</p>
+                <h3>Velvet Reserve</h3>
 
+                <div class="wine-rating">
+                    ★★★★★
+                    <span>(24)</span>
+                </div>
+
+                <div class="wine-bottom">
+                    <strong>₦28,500</strong>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wine 2 -->
+        <div class="wine-card">
+            <div class="wine-image">
+                <img src="images/white-wine.jpg" alt="Premium White Wine">
+            </div>
+
+            <div class="wine-info">
+                <p class="wine-type">WHITE WINE</p>
+                <h3>Golden Blanc</h3>
+
+                <div class="wine-rating">
+                    ★★★★★
+                    <span>(18)</span>
+                </div>
+
+                <div class="wine-bottom">
+                    <strong>₦24,000</strong>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wine 3 -->
+        <div class="wine-card">
+            <div class="wine-image">
+                <span class="wine-badge">POPULAR</span>
+                <img src="images/rose-wine.jpg" alt="Premium Rosé Wine">
+            </div>
+
+            <div class="wine-info">
+                <p class="wine-type">ROSÉ</p>
+                <h3>Rose Élégance</h3>
+
+                <div class="wine-rating">
+                    ★★★★★
+                    <span>(31)</span>
+                </div>
+
+                <div class="wine-bottom">
+                    <strong>₦22,500</strong>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wine 4 -->
+        <div class="wine-card">
+            <div class="wine-image">
+                <img src="images/sparkling-wine.jpg" alt="Premium Sparkling Wine">
+            </div>
+
+            <div class="wine-info">
+                <p class="wine-type">SPARKLING</p>
+                <h3>Éclat Brut</h3>
+
+                <div class="wine-rating">
+                    ★★★★★
+                    <span>(27)</span>
+                </div>
+
+                <div class="wine-bottom">
+                    <strong>₦35,000</strong>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
     </main>
-
-
 
     <!-- ==============================
          FOOTER
          ============================== -->
 
     <footer>
-
-        <!-- Footer will be built later -->
-
+      <!-- Footer will be built later -->
     </footer>
-
-
-</body>
-
+  </body>
 </html>

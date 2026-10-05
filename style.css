@@ -691,6 +691,199 @@ img {
     }
 }
 
+/* ================================
+   FEATURED WINES
+================================ */
+
+.featured {
+    padding: 100px 7%;
+    background: var(--cream);
+}
+
+.section-header {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-eyebrow {
+    color: var(--gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    color: var(--dark);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 15px;
+}
+
+.section-header > p:last-child {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Wine Grid */
+
+.wine-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Wine Card */
+
+.wine-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wine-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(23, 20, 20, 0.1);
+}
+
+/* Wine Image */
+
+.wine-image {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    background: #f2eee7;
+}
+
+.wine-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.wine-card:hover .wine-image img {
+    transform: scale(1.05);
+}
+
+/* Badge */
+
+.wine-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+
+    background: var(--burgundy);
+    color: var(--white);
+
+    padding: 7px 10px;
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Wine Information */
+
+.wine-info {
+    padding: 22px;
+}
+
+.wine-type {
+    color: var(--gold);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.wine-info h3 {
+    color: var(--dark);
+    font-family: Georgia, serif;
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+/* Rating */
+
+.wine-rating {
+    color: var(--gold);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.wine-rating span {
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-left: 5px;
+}
+
+/* Price + Cart Button */
+
+.wine-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.wine-bottom strong {
+    color: var(--burgundy);
+    font-size: 1.05rem;
+}
+
+.wine-bottom button {
+    border: none;
+    background: var(--dark);
+    color: var(--white);
+
+    padding: 10px 14px;
+
+    cursor: pointer;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    transition: background 0.3s ease;
+}
+
+.wine-bottom button:hover {
+    background: var(--burgundy);
+}
+
+/* ================================
+   FEATURED WINES RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .wine-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .featured {
+        padding: 75px 5%;
+    }
+
+    .wine-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wine-image {
+        height: 350px;
+    }
+
+    .wine-bottom {
+        align-items: center;
+    }
+
+}
 
 /* =========================================
    MOBILE
