@@ -440,6 +440,210 @@ img {
     color: #777777;
 }
 
+/* =========================================
+   WINE CATEGORIES
+   ========================================= */
+
+.categories {
+    padding: 110px 0;
+    background-color: var(--white);
+}
+
+
+/* =========================================
+   SECTION HEADING
+   ========================================= */
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-eyebrow {
+    margin-bottom: 15px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: var(--gold);
+}
+
+.section-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 4vw, 56px);
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    color: var(--burgundy);
+}
+
+.section-description {
+    max-width: 550px;
+
+    margin: 20px auto 0;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--muted);
+}
+
+
+/* =========================================
+   CATEGORY GRID
+   ========================================= */
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   CATEGORY CARD
+   ========================================= */
+
+.category-card {
+    position: relative;
+
+    height: 430px;
+
+    overflow: hidden;
+
+    background-color: #ddd;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   CATEGORY OVERLAY
+   ========================================= */
+
+.category-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(23, 20, 20, 0.85),
+        rgba(23, 20, 20, 0.05) 65%
+    );
+}
+
+.category-overlay {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    color: var(--white);
+}
+
+.category-overlay span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: var(--gold);
+}
+
+.category-overlay h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 29px;
+
+    font-weight: 400;
+}
+
+.category-overlay p {
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* =========================================
+   CATEGORY RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-card {
+        height: 420px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .categories {
+        padding: 75px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+
+    .section-description {
+        font-size: 14px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .category-card {
+        height: 400px;
+    }
+}
 
 /* =========================================
    TABLET
@@ -554,3 +758,4 @@ img {
         font-size: 24px;
     }
 }
+
